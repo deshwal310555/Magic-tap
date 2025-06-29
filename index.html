@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Tap Test</title>
+  <title>Magic Tap</title>
   <style>
     html, body {
       margin: 0;
@@ -26,20 +26,25 @@
 
     .heart-link {
       position: absolute;
-      bottom: 5%;
-      right: 5%;
-      width: 80px;
-      height: 80px;
+      bottom: 18%;
+      right: 14%;
+      width: 60px;
+      height: 60px;
       z-index: 10;
       cursor: pointer;
-      background: rgba(255, 0, 0, 0.3); /* Just to show area */
     }
   </style>
 </head>
 <body>
   <div class="wrapper">
     <img class="main-img" src="assets/Image.jpg" alt="Main" />
-    <div class="heart-link" onclick="alert('Yayy! Tap registered 💖')"></div>
+    <div class="heart-link" onclick="goToSurprise()"></div>
   </div>
+
+  <script>
+    function goToSurprise() {
+      window.location.href = "https://deshwal310555.github.io/Birthday-Surprise/";
+    }
+  </script>
 </body>
 </html>
