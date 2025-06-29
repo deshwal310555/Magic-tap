@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,18 +22,20 @@
     .container img {
       width: 100%;
       height: 100%;
-      object-fit: cover; /* this will stretch image to cover whole screen */
+      object-fit: contain;
       display: block;
     }
 
     .heart-link {
       position: absolute;
-      bottom: 11.8%; /* final tested position for heart */
-      right: 18.5%;
+      bottom: 4.5%;   /* ✅ FINAL tested adjustment */
+      right: 19.3%;   /* ✅ Exact placement for your marked heart */
       width: 60px;
       height: 60px;
       cursor: pointer;
       z-index: 10;
+      /* Optional: to see area during testing */
+      /* background-color: rgba(255, 0, 0, 0.3); */
     }
   </style>
 </head>
