@@ -1,46 +1,43 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Magic Tap</title>
   <style>
-    html, body {
+    body {
       margin: 0;
       padding: 0;
-      height: 100%;
+      overflow: hidden;
+    }
+
+    .container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .container img {
       width: 100%;
-    }.container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-}
+      height: 100%;
+      object-fit: cover;
+    }
 
-.container img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-}
-
-.heart-link {
-  position: absolute;
-  bottom: 9.3%;   /* Fine-tuned for teddy's heart center */
-  right: 11.8%;   /* Horizontally aligned to teddy's hand heart */
-  width: 60px;
-  height: 60px;
-  z-index: 999;
-  cursor: pointer;
-  /* background-color: rgba(255, 0, 0, 0.4); */
-}
-
+    .clickable {
+      position: absolute;
+      width: 12vw;
+      height: 12vw;
+      bottom: 6.5%;
+      right: 10.5%;
+      cursor: pointer;
+      z-index: 10;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <img src="assets/Image.jpg" alt="Image" />
-    <div class="heart-link" onclick="goToSurprise()"></div>
-  </div>  <script>
-    function goToSurprise() {
-      window.location.href = "https://deshwal310555.github.io/Ayush-birthday/";
-    }
-  </script></body>
+    <img src="assets/Image.jpg" alt="Magic Tap" />
+    <a href="https://deshwal310555.github.io/Ayush-birthday/" class="clickable"></a>
+  </div>
+</body>
 </html>
