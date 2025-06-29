@@ -5,9 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Magic Tap</title>
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      width: 100%;
+      height: 100%;
       overflow: hidden;
     }
 
@@ -17,27 +23,39 @@
       height: 100vh;
     }
 
-    .container img {
+    .main-image {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain; /* No zoom, image fits fully */
+      display: block;
     }
 
-    .clickable {
+    .heart-link {
       position: absolute;
-      width: 12vw;
-      height: 12vw;
-      bottom: 6.5%;
+      bottom: 6.5%;   /* ✅ Accurate heart position based on your circle */
       right: 10.5%;
-      cursor: pointer;
+      width: 60px;
+      height: 60px;
       z-index: 10;
+    }
+
+    .heart-link a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <img src="assets/Image.jpg" alt="Magic Tap" />
-    <a href="https://deshwal310555.github.io/Ayush-birthday/" class="clickable"></a>
+    <img src="assets/Image.jpg" alt="Magic Tap Image" class="main-image" />
+    <div class="heart-link">
+      <a href="https://deshwal310555.github.io/Ayush-birthday/" 
+         target="_blank" 
+         rel="noopener noreferrer">
+      </a>
+    </div>
   </div>
 </body>
 </html>
