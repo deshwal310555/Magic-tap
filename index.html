@@ -13,33 +13,33 @@
       background-color: #000;
     }
 
-    .wrapper {
+    .container {
       position: relative;
-      height: 100%;
       width: 100%;
+      height: 100%;
     }
 
-    .main-img {
-      height: 100%;
+    .container img {
       width: 100%;
+      height: 100%;
       object-fit: contain;
       display: block;
     }
 
     .heart-link {
       position: absolute;
-      bottom: 18%;
-      right: 14%;
+      bottom: 19.5%;
+      right: 13.5%;
       width: 60px;
       height: 60px;
-      z-index: 10;
       cursor: pointer;
+      z-index: 10;
     }
   </style>
 </head>
 <body>
-  <div class="wrapper">
-    <img class="main-img" src="assets/Image.jpg" alt="Main" />
+  <div class="container">
+    <img src="assets/Image.jpg" alt="Image" />
     <div class="heart-link" onclick="goToSurprise()"></div>
   </div>
 
