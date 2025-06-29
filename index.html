@@ -2,60 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Magic Tap</title>
+  <title>Tap Test</title>
   <style>
-    * {
+    html, body {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-
-    html, body {
-      width: 100%;
       height: 100%;
-      background-color: #000;
-      overflow: hidden;
-      position: relative;
+      width: 100%;
     }
 
     .wrapper {
-      width: 100%;
-      height: 100%;
       position: relative;
+      height: 100%;
+      width: 100%;
     }
 
     .main-img {
-      width: 100%;
       height: 100%;
+      width: 100%;
       object-fit: contain;
       display: block;
-      position: relative;
-      z-index: 1;
     }
 
     .heart-link {
       position: absolute;
       bottom: 5%;
       right: 5%;
-      width: 70px;
-      height: 70px;
-      z-index: 9999;
+      width: 80px;
+      height: 80px;
+      z-index: 10;
       cursor: pointer;
-      /* Uncomment to test clickable area: */
-      /* background: rgba(255, 0, 0, 0.2); */
+      background: rgba(255, 0, 0, 0.3); /* Just to show area */
     }
   </style>
 </head>
 <body>
   <div class="wrapper">
-    <img class="main-img" src="assets/Image.jpg" alt="Magic Image" />
-    <div class="heart-link" onclick="goToSurprise()"></div>
+    <img class="main-img" src="assets/Image.jpg" alt="Main" />
+    <div class="heart-link" onclick="alert('Yayy! Tap registered 💖')"></div>
   </div>
-
-  <script>
-    function goToSurprise() {
-      window.location.href = "https://deshwal310555.github.io/Birthday-Surprise/";
-    }
-  </script>
 </body>
 </html>
