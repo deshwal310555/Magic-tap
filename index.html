@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>Magic Tap</title>
@@ -9,44 +8,41 @@
       padding: 0;
       height: 100%;
       width: 100%;
-    }
+    }.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
 
-    .container {
-      position: relative;
-      width: 100%;
-      height: 100vh;
-    }
+.container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
 
-    .container img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      display: block;
-    }
+.heart-link {
+  position: absolute;
+  bottom: 5.8%;   /* Adjusted to teddy's hand position */
+  right: 8.5%;    /* Adjusted horizontally to teddy's heart */
+  width: 65px;
+  height: 65px;
+  z-index: 999;
+  cursor: pointer;
+  /* Uncomment for debugging
+  background-color: rgba(255, 0, 0, 0.3); 
+  */
+}
 
-    .heart-link {
-      position: absolute;
-      bottom: 2.2%;    /* ❤️ Exact height match for heart */
-      right: 5.5%;      /* ❤️ Horizontal alignment for heart */
-      width: 50px;
-      height: 50px;
-      z-index: 999;
-      cursor: pointer;
-      /* Uncomment below to see clickable box while testing */
-      /* background-color: rgba(255, 0, 0, 0.4); */
-    }
   </style>
 </head>
 <body>
   <div class="container">
     <img src="assets/Image.jpg" alt="Image" />
     <div class="heart-link" onclick="goToSurprise()"></div>
-  </div>
-
-  <script>
+  </div>  <script>
     function goToSurprise() {
       window.location.href = "https://deshwal310555.github.io/Ayush-birthday/";
     }
-  </script>
-</body>
+  </script></body>
 </html>
